@@ -44,3 +44,6 @@ alias ll="ls -AlF --color"
 # Prompt
 setopt prompt_subst # necessary
 source ~/.dotfiles/nostow/agnoster-zsh-theme/agnoster.zsh-theme
+
+# General environment variables
+export VISUAL=vim
