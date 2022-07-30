@@ -47,3 +47,9 @@ source ~/.dotfiles/nostow/agnoster-zsh-theme/agnoster.zsh-theme
 
 # General environment variables
 export VISUAL=vim
+
+# SSH Agent
+SSH_AGENT="/usr/bin/ssh-agent"
+if [[ -z $SSH_AGENT_PID && -e $SSH_AGENT ]]; then
+    eval `$SSH_AGENT` 1>/dev/null
+fi
